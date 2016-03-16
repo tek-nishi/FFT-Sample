@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\appEnv.hpp" />
+    <ClInclude Include="src\lib\audio.hpp" />
+    <ClInclude Include="src\lib\camera2D.hpp" />
+    <ClInclude Include="src\lib\defines.hpp" />
+    <ClInclude Include="src\lib\fileUtil.hpp" />
+    <ClInclude Include="src\lib\font.hpp" />
+    <ClInclude Include="src\lib\framework.hpp" />
+    <ClInclude Include="src\lib\gamePad.hpp" />
+    <ClInclude Include="src\lib\glExt.hpp" />
+    <ClInclude Include="src\lib\glfwWindow.hpp" />
+    <ClInclude Include="src\lib\glTexture.hpp" />
+    <ClInclude Include="src\lib\graph.hpp" />
+    <ClInclude Include="src\lib\matrix.hpp" />
+    <ClInclude Include="src\lib\os.hpp" />
+    <ClInclude Include="src\lib\os_osx.hpp" />
+    <ClInclude Include="src\lib\os_win.hpp" />
+    <ClInclude Include="src\lib\png.hpp" />
+    <ClInclude Include="src\lib\random.hpp" />
+    <ClInclude Include="src\lib\streaming.hpp" />
+    <ClInclude Include="src\lib\streamWav.hpp" />
+    <ClInclude Include="src\lib\texture.hpp" />
+    <ClInclude Include="src\lib\utils.hpp" />
+    <ClInclude Include="src\lib\vector.hpp" />
+    <ClInclude Include="src\lib\wav.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lib\appEnv.cpp" />
+    <ClCompile Include="src\lib\audio.cpp" />
+    <ClCompile Include="src\lib\camera2D.cpp" />
+    <ClCompile Include="src\lib\fileUtil.cpp" />
+    <ClCompile Include="src\lib\font.cpp" />
+    <ClCompile Include="src\lib\gamePad.cpp" />
+    <ClCompile Include="src\lib\glExt.cpp" />
+    <ClCompile Include="src\lib\glfwWindow.cpp" />
+    <ClCompile Include="src\lib\glTexture.cpp" />
+    <ClCompile Include="src\lib\graph.cpp" />
+    <ClCompile Include="src\lib\matrix.cpp" />
+    <ClCompile Include="src\lib\os_osx.cpp" />
+    <ClCompile Include="src\lib\os_win.cpp" />
+    <ClCompile Include="src\lib\png.cpp" />
+    <ClCompile Include="src\lib\random.cpp" />
+    <ClCompile Include="src\lib\streaming.cpp" />
+    <ClCompile Include="src\lib\streamWav.cpp" />
+    <ClCompile Include="src\lib\texture.cpp" />
+    <ClCompile Include="src\lib\utils.cpp" />
+    <ClCompile Include="src\lib\wav.cpp" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9EFD6A36-08E8-485E-B135-5B6519C0F6B1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameTemplate</RootNamespace>
+    <ProjectName>GameTemplate</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>include;include/freetype2;Windows/include;$(IncludePath)</IncludePath>
+    <LibraryPath>Windows/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>include;include/freetype2;Windows/include;$(IncludePath)</IncludePath>
+    <LibraryPath>Windows/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;_ITERATOR_DEBUG_LEVEL=0;PRODUCT_NAME=$(ProjectName);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;PRODUCT_NAME=$(ProjectName);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

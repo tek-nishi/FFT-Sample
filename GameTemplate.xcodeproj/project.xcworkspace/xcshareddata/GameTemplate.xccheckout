@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32B4C784-8D0C-4B8D-8283-4E137827FC8C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameTemplate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0B49C5D396397AA2F8FD0F7AADBF94732128FADA</key>
+		<string>https://github.com/ssa-study/GameTemplate.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameTemplate.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0B49C5D396397AA2F8FD0F7AADBF94732128FADA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ssa-study/GameTemplate.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0B49C5D396397AA2F8FD0F7AADBF94732128FADA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0B49C5D396397AA2F8FD0F7AADBF94732128FADA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GameTemplate</string>
+		</dict>
+	</array>
+</dict>
+</plist>
